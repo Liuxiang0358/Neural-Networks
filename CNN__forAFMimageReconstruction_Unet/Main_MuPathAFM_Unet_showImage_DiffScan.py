@@ -79,7 +79,7 @@ def get_batch_undersampled(image, mask, width, height, batch_size):
     # image = tf.image.per_image_standardization(image)
     undersampled_image = tf.multiply(image, mask)
 
-    image_batch, undersampled_image_batch = tf.train.batch([image, undersampled_image], batch_size=batch_size)
+    image_batch, undersampled_image_batch, mask = tf.train.batch([image, undersampled_image, mask], batch_size=batch_size)
 
     return undersampled_image_batch, image_batch, mask
 
