@@ -142,19 +142,19 @@ for s in range(len(image)):
             vertical_cut = 16
             side_cut = 58
 
-            new_img = imutils.rotate(img, angle)
-            new_lbl = imutils.rotate(lbl, angle)
-            new_img = new_img[side_cut:n-side_cut,vertical_cut:m-vertical_cut]
-            new_lbl = new_lbl[side_cut:n-side_cut,vertical_cut:m-vertical_cut]
+        new_img = imutils.rotate(img, angle)
+        new_lbl = imutils.rotate(lbl, angle)
+        new_img = new_img[side_cut:n-side_cut,vertical_cut:m-vertical_cut]
+        new_lbl = new_lbl[side_cut:n-side_cut,vertical_cut:m-vertical_cut]
 
-            new_img = cv.resize(new_img, (m, n))
-            new_lbl = cv.resize(new_lbl, (m, n))
+        new_img = cv.resize(new_img, (m, n))
+        new_lbl = cv.resize(new_lbl, (m, n))
 
-            scipy.misc.imsave(file_dir_save + str(cnt_image) + ".png", new_img)
-            cnt_image += 1
-            new_lbl = np.round(new_lbl).astype(int)
-            scipy.misc.imsave(mask_dir_save + str(cnt_label) + ".png", new_lbl)
-            cnt_label += 1
+        scipy.misc.imsave(file_dir_save + str(cnt_image) + ".png", new_img)
+        cnt_image += 1
+        new_lbl = np.round(new_lbl).astype(int)
+        scipy.misc.imsave(mask_dir_save + str(cnt_label) + ".png", new_lbl)
+        cnt_label += 1
 
  
 
