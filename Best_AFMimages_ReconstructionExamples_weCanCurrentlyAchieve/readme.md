@@ -3,4 +3,8 @@ This is the best mu-path undersampled image reconstruction we can currently achi
 
 For highly sparse image, Compressive sensing is still better. Maybe we need a sparse reconstruction deep neural network model :)
 
+One interesting thing is that the neural network is actually trained from cat/dog images.
+
+Writing paper on this, will release CNN structure later.
+
 
