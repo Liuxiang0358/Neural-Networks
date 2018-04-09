@@ -21,8 +21,8 @@ def read_files(file_dir):
     return image
 
 
-file_dir = "C:\\Users\\lyf58\\PycharmProjects\\ImageDenoising\\roadData\\training\\image_2"
-mask_dir = "C:\\Users\\lyf58\\PycharmProjects\\ImageDenoising\\roadData\\training\\gt_image_2"
+file_dir = "C:\\Users\\lyf58\\PycharmProjects\\ImageDenoising\\roadData\\training"
+mask_dir = "C:\\Users\\lyf58\\PycharmProjects\\ImageDenoising\\roadData\\training"
 
 file_dir_save = "C:\\Users\\lyf58\\PycharmProjects\\ImageDenoising\\roadData\\training\\data_enhanced\\"
 mask_dir_save = "C:\\Users\\lyf58\\PycharmProjects\\ImageDenoising\\roadData\\training\\label_enhanced\\"
